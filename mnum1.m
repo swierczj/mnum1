@@ -1,11 +1,11 @@
 % Change parameters for different algorithms, datasets and max time for
 % algorithm 
 % true, true - Gaussian elimination with complete pivoting, 1st dataset 
-% false, true - Gauss-Seidel mathod 1st dataset
+% false, true - Gauss-Seidel method 1st dataset
 % true, false - Gaussian elimination with complete pivoting, 2nd dataset
 % false, false - Gauss-Seidel method 2nd dataset
 max_time = 2 * 60; % time in seconds
-data = perform_analysis(false, false, max_time);
+data = perform_analysis(false, true, max_time);
 figure
 plot(data(:, 2), data(:, 1));
 title('Zależność residuum od ilości równań dla A, G-S')
